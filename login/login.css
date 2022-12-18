@@ -1,0 +1,50 @@
+/* Document START */
+
+/* Document END */
+
+/* NavBar START */
+
+.navBar {
+    display: none;
+}
+
+/* NavBar START */
+
+/* Login Box START */
+
+.loginBoxDiv { 
+    display: grid;
+    grid-template-rows: auto auto auto;
+    
+    margin: 5px;
+    padding: 45px;
+    
+    background-color: var(--objectBackground);
+    border-radius: 45px;
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.loginBoxTitle {
+    color: var(--textColor1);
+    margin: 15px 0 25px 0;
+}
+
+.loginForm {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.input {
+    margin: 10px;
+    padding: 10px;
+    
+    border-radius: 15px;
+    border-width: 0px;
+    border-color: gray;
+}
+
+.signupMessage {
+    color: var(--textColor1);
+}
+/* Login Box START */

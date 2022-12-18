@@ -1,0 +1,66 @@
+/* Document Style SATRT */
+
+html {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+/* Document Style END */
+
+/* Editor Style START */
+
+.postEditorContainer {
+    margin: 15px;
+    padding: 20px;
+    width: max-content;
+    /*
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    */
+    
+    background-color: var(--objectBackground);
+    border-radius: 25px;
+    
+    box-shadow: var(--shadowDefault);
+}
+
+.postEditor {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    
+}
+
+.postContentInput {
+    margin: 15px;
+    resize: none;
+    padding: 10px;
+    
+    border-radius: 15px;
+    border-width: 0;
+}
+
+.newPostSubmit {
+    margin: auto;
+    width: max-content;
+    padding: 15px;
+    
+    border-radius: 25px;
+    border-width: 0;
+    
+    transition: background 0.2s ease-out;
+    background: var(--objectBackground3);
+}
+
+.newPostSubmit:hover {
+    transition: background 0.2s ease-out;
+    background: var(--objectBackground2);
+}
+
+/* Editor Style START */

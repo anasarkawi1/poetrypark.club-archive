@@ -1,0 +1,56 @@
+<?php
+
+
+// Retrive data from the database
+function retrieveData($statement, $data) {
+    $con = retCon();
+    $output = false;
+    if (mysqli_error($con)) {
+        echo mysqli_error($con) . '<br>';
+        exit('No Data Retrived');
+    }
+    
+    if ($statement != '') {
+        $statementEscaped = $statement; // mysqli_real_escape_string($con, $statement);
+    } else {
+        exit('Empty Statement');
+    }
+
+    $returnVal = $con->query($statementEscaped);
+    
+    if ($returnVal == '') {
+        exit('Empty data' . mysqli_error($con));
+    }
+    
+    while ($row = $returnVal->fetch_assoc()) {
+        $output = $row[$data];
+    }
+    if (mysqli_error($con)) {
+        $output = mysqli_error($con);
+    }
+
+    /*
+    mysqli_query($con, $statementEscaped);
+    $output = mysqli_use_result($con);
+    */
+    
+    return $output;
+}
+
+// Execute a query against the database
+function executeQuery($statement) {
+    if (mysqli_error($con)) {
+        echo mysqli_error($con) . '<br>';
+        exit('Query Failed');
+    }
+    
+    if ($statement != '') {
+        $statementEscaped = mysqli_real_escape_string($con, $statement);
+    } else {
+        exit('Empty Statement');
+    }
+    
+    $returnVal = mysqli_query($con, $statementEscaped);
+}
+
+?>

@@ -1,0 +1,82 @@
+/* Document START */
+
+* {
+    font-family: sans-serif;
+    
+    --backgroundColor: #F2F2F0;
+    --objectBackground: #BF9075;
+    --objectBackground2: #D99696;
+    --objectBackground3: #F2F2F0;
+    --objectBackground4: #f7f7f7;
+    --textColor1: #1C1C1C; /* #f7f7f7; */
+    
+    --likeButtonUnpressed: #F2D5D5;
+    --likeButtonPressed: #c18484;
+    --likeButtonHover: #D99696;
+    
+    --shadowDefault: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+html {
+    display: flex;
+    justify-content: center;
+    
+    background-color: var(--backgroundColor);
+    /* width: 100%; */
+}
+
+body {
+    display: grid;
+    /* justify-content: center; */
+    grid-template-rows: auto auto;
+    
+    margin: 50px;
+    align-content: center;
+    text-align: center;
+    
+    width: 75vh;
+}
+
+/* Document END */
+
+/* Navbar START */
+
+.navBar {
+    margin: 5px 5px 25px 5px;
+    padding: 20px;
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: auto;
+    
+    background-color: var(--objectBackground);
+    border-radius: 25px;
+    
+    box-shadow: var(--shadowDefault);
+}
+
+.navLinks {
+
+}
+
+.navBarLink {
+    margin: 0 5px 0 5px;
+    padding: 8px;
+    text-decoration: none;
+    transition: background 0.2s ease-out;
+    background: inherit;
+    color: white;
+    border-radius: 20px;
+    font-size: 17px;
+}
+
+.navBarLink:hover {
+    margin: 0 5px 0 5px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.2s ease-out;
+    background: var(--objectBackground2);
+    border-radius: 20px;
+}
+
+/* Navbar END */

@@ -1,0 +1,26 @@
+<?php
+
+$databaseInfo = parse_ini_file('databaseCred.ini');
+
+
+/* Database Credentials START */
+define('DB_HOST', $databaseInfo['db_host']);
+define('DB_NAME', $databaseInfo['db_name']);
+define('DB_USER', $databaseInfo['db_user']);
+define('DB_PASS', $databaseInfo['db_pass']);
+define('DB_PORT', $databaseInfo['db_port']);
+/* Database Credentials END */
+
+/*
+$db_host = $databaseInfo['db_host'];
+$db_name = $databaseInfo['db_name'];
+$db_user = $databaseInfo['db_user'];
+$db_pass = $databaseInfo['db_pass'];
+*/
+
+$con = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME, DB_PORT);
+
+if($con === false) {
+    die("ERROR: Could not connect. " . mysqli_connect_error());
+} 
+?>

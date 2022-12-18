@@ -1,0 +1,94 @@
+/* Document START */
+
+
+
+/* Document END */
+
+/* Posts START */
+
+.post {
+    margin: 35px 5px 25px 5px;
+    padding: 20px;
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    
+    background-color: var(--objectBackground);
+    border-radius: 25px;
+    
+    box-shadow: var(--shadowDefault);
+}
+
+.postMeta {
+    display: flex;
+    justify-content: flex-start;
+    color: var(--textColor1);
+    
+    margin: 5px;
+    
+    border-width: 0 0 1px 0;
+    border-color: aliceblue;
+    border-style: solid;
+}
+
+.postMetaItem {
+    margin: 15px;
+    height: max-content;
+}
+
+.profilePhotoPost {
+    width: 42px;
+    height: 42px;
+    border-radius: 45px;
+}
+
+.postLink {
+    text-decoration: none;
+    color: var(--textColor1);
+}
+
+.postContent {
+    margin: 5px;
+    text-align: left;
+    color: var(--textColor1);
+    
+    border-width: 0 0 1px 0;
+    border-color: aliceblue;
+    border-style: solid;
+}
+
+.postData {
+    margin: 10px 5px 5px 5px;
+    text-align: left;
+    color: var(--textColor1);
+}
+
+.likesNumber {
+    color: var(--textColor1);
+    margin: 2px;
+}
+
+.postActions {
+    margin: 5px 5px 5px 5px;
+}
+
+.postActionInput {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.likeButtonInput {
+    padding: 7px;
+    border-radius: 20px;
+    border-width: 0;
+    transition: background 0.2s ease-out;
+    background: var(--likeButtonUnpressed);
+}
+
+.likeButtonInput:hover {
+    transition: background 0.2s ease-out;
+    background: var(--likeButtonHover);
+}
+/* Posts END */

@@ -1,0 +1,63 @@
+/* Document START */
+
+
+
+/* Document END */
+
+/* Profile START */
+
+.profileInfo {
+    color: var(--textColor1);
+    
+    display: grid;
+    grid-template-columns: auto auto;
+    
+    padding: 25px;
+    width: 100%;
+    
+    background-color: var(--objectBackground);
+    border-radius: 25px;
+    
+    box-shadow: var(--shadowDefault);
+}
+
+.profilePicture {
+    border-radius: 45px;
+    height: 180px;
+    width: 180px;
+}
+
+.profileInfoBasic {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    
+    margin: 0px 0 0 15px;
+    
+    text-align: left;
+}
+
+.usernameProfile {
+    margin: 12px 0px 12px 0px;
+}
+
+.profileOptions {
+    margin: 10px;
+    display: flex;
+    align-content: flex-start;
+}
+
+.profileOptionsInput {
+    margin: 5px;
+    padding: 7px;
+    border-radius: 20px;
+    border-width: 0;
+    transition: background 0.2s ease-out;
+    background: var(--likeButtonUnpressed);
+}
+
+.profileOptionsInput:hover {
+    transition: background 0.2s ease-out;
+    background: var(--likeButtonHover);
+}
+
+/* Profile */
